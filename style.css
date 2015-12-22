@@ -101,7 +101,7 @@ body {
 }
 
 .background {
-	background-image: url('background.jpg');
+	background-image: url('img/background.jpg');
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
@@ -126,7 +126,7 @@ body {
 .contents .logo {
 	width: 400px;
 	height: 150px;
-	background-image: url('sid-srishti-logo.png');
+	background-image: url('img/sid-srishti-logo.png');
 	background-repeat: no-repeat;
 	float: right;
 }
@@ -148,7 +148,111 @@ body {
 	margin-right: 0px;
 }
 
+.back-wrapper {
+	width: 10%;
+	height: 100px;
+	float: left;
+}
 
+.back {
+	margin: auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-image: url('img/back-small.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	margin-top: 24px;
+}
+
+.back:hover {
+	background-color: #000;
+}
+
+/* Wedding page */
+
+.wedding-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: #fff;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in;
+	height: 100%;
+	overflow: auto;
+	text-align: center;
+}
+
+.wedding-wrapper.show {
+	opacity: 1;
+	pointer-events: initial;
+}
+
+.wedding-wrapper .back {
+	background-color: #ddd;
+}
+
+.wedding-wrapper .back:hover {
+	background-color: #000;
+}
+
+.wedding-info {
+	width: 40%;
+	float: left;
+}
+
+.wedding-info-body {
+	margin-top: 30px;
+	margin-right: 60px;
+}
+
+.wedding-carousel {
+	width: 50%;
+	float: right;
+	background-color: black;
+	background-image: url('img/crowne-plaza-muscat.jpg');
+	background-size: cover;
+	transition: background-position 15s ease-out;
+	background-position: 0px 0px;
+}
+
+.wedding-carousel.show {
+	background-position: -400px 0px;
+}
+
+.quote {
+	font-size: 2.2em;
+	line-height: 1.5em;
+	margin-bottom: 9px;
+	color: #fd658e;
+}
+
+.quote-author {
+	font-size: 1.3em;
+	text-align: right;
+	color: #fd658e;
+}
+
+.wedding-info-body-details {
+	margin-top: 30px;
+}
+
+.wedding-info-body-details-detail {
+	font-size: 2.2em;
+}
+
+.wedding-info-body-details p {
+	margin-bottom: 9px;
+	line-height: 1.5em;
+}
+
+.wedding-info-body-details p:last-child {
+	font-size: 1.3em;
+}
 
 /* Photo gallery */
 
@@ -169,28 +273,6 @@ body {
 .photos-wrapper.show {
 	opacity: 1;
 	pointer-events: initial;
-}
-
-.photos-back-wrapper {
-	width: 10%;
-	height: 100px;
-	float: left;
-}
-
-.photos-back {
-	margin: auto;
-	width: 60px;
-	height: 60px;
-	border-radius: 30px;
-	background-image: url('img/back-small.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-	cursor: pointer;
-	margin-top: 24px;
-}
-
-.photos-back:hover {
-	background-color: #000;
 }
 
 .photos {

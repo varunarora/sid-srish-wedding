@@ -66,8 +66,21 @@
 	});
 
 	document.querySelector('.photos-back').addEventListener('click', function(){
-		// Show photos wrapper.
+		// Hide photos wrapper.
 		classie.remove(document.querySelector('.photos-wrapper'), 'show');
+	});
+
+	document.querySelector('a#wedding').addEventListener('click', function(){
+		// Show wedding info wrapper.
+		classie.add(document.querySelector('.wedding-wrapper'), 'show');
+		classie.add(document.querySelector('.wedding-carousel'), 'show');
+
+		document.querySelector('.wedding-carousel').style.height = window.innerHeight + 'px';
+	});
+
+	document.querySelector('.wedding-back').addEventListener('click', function(){
+		// Hide wedding wrapper.
+		classie.remove(document.querySelector('.wedding-wrapper'), 'show');
 	});
 
 
