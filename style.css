@@ -250,8 +250,13 @@ body {
 	line-height: 1.5em;
 }
 
-.wedding-info-body-details p:last-child {
+.wedding-info-body-details p:last-child,
+.wedding-info-body-details-location {
 	font-size: 1.3em;
+}
+
+.wedding-info-body-details p:last-child {
+	margin-top: 21px;
 }
 
 /* Photo gallery */
